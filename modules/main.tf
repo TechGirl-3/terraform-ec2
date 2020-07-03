@@ -61,9 +61,6 @@ resource "aws_instance" "instance" {
   instance_type = var.inst_type
   availability_zone = var.subnet_az
   vpc_security_group_ids  = ["aws_security_group.allow_traffic.id"]
-  tags = {
-    Name = "sre-instance"
-  }
 }
 
 resource "aws_ebs_volume" "ebs" {
