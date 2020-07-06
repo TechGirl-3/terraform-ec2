@@ -1,36 +1,36 @@
 variable region {
-    default = "us-east-1"
+  default = "us-east-1"
 }
 
 variable "subnet_az" {
-    default = "us-east-1a"
+  default = "us-east-1a"
 }
- 
+
 variable "vpc_cidr_block" {
-    default = "10.0.0.0/16"
+  default = "10.0.0.0/16"
 }
 variable "subnet_cidr_block" {
-    default = "10.0.0.0/24"
+  default = "10.0.0.0/24"
 }
 
 variable "inst_type" {
-    default = "t2.micro"
+  default = "t2.micro"
 }
 
 variable "ami_id" {
-    default = "ami-0ffd59b53e6797671"
+  default = "ami-0ffd59b53e6797671"
 }
 
 variable "ami_owner" {
-    default = "self"
+  default = "self"
 }
 
 #Tags
 
 variable "vpc_tagkey" {
-    default = "sre-vpc"
+  default = "sre-vpc"
 }
 
 variable "subnet_tagkey" {
-    default = "sre-subnet"
+  default = "sre-subnet"
 }
